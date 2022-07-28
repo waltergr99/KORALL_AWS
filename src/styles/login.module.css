@@ -1,0 +1,86 @@
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/public/img/bg.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.form {
+    width: 30rem;
+    height: 40rem;
+    background-color: #434343;
+    box-shadow: 5px 5px 0px 0px #EE7D30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    color: #EE7D30;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #FFF;
+    text-align: center;
+}
+
+.inputContenedor {
+    display: flex;
+    width: 100%;
+}
+.label{
+    width: 40%;
+    height: 2.5rem;
+    background-color: #ACACAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.input, button {
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    width: 60%;
+    background-color: #C4C4C4;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.button, .btnRegister  {
+    background-color: #EE7D30;
+    color: #FFF;
+    font-size: 1.2rem;
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.btnRegister {
+    background-color: #FFF;
+    color: #000;
+}
+
+.forgotContenedor {
+    margin-bottom: 3rem;
+}
+.forgot {
+    color: #fff;
+    font-size: 1rem;
+    
+}
