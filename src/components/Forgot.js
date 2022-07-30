@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/forgot.module.css";
-import { useNavigate , NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 function Forgot() {

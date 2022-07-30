@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/createuser.module.css";
-import { useNavigate , NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function CreateUser() {
     return (

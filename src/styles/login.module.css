@@ -6,9 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/public/img/bg.jfif);
-    background-size: cover;
-    background-position: center;
 }
 
 .form {
