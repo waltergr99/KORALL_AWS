@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-korallaws-dev-234932-authRole",
+      "UnauthRoleArn": "arn:aws:iam::472909181667:role/amplify-korallaws-dev-234932-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::472909181667:role/amplify-korallaws-dev-234932-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-korallaws-dev-234932-deployment",
+      "UnauthRoleName": "amplify-korallaws-dev-234932-unauthRole",
+      "StackName": "amplify-korallaws-dev-234932",
+      "StackId": "arn:aws:cloudformation:us-east-1:472909181667:stack/amplify-korallaws-dev-234932/29474b50-19fa-11ed-90b1-0acee5af9ba1",
+      "AmplifyAppId": "d3rhoj7yrmuzkm"
+    },
+    "categories": {
+      "auth": {
+        "korallaws72b26996": {}
+      }
+    }
+  }
+}

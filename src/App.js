@@ -1,12 +1,12 @@
 import React from 'react';
 import {
-  BrowserRouter , Routes, 
-  Switch,
+  Routes, 
+
   Route  
 } from "react-router-dom";
 
 import Login from './components/Login';
-import Dashboard from './components/Dashboard';
+
 
 import NotFound from './components/NotFound';
 import Forgot from './components/Forgot';
