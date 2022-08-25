@@ -4,25 +4,36 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {STLLoader} from 'three/examples/jsm/loaders/STLLoader';
 import {STLExporter} from 'three/examples/jsm/exporters/STLExporter'
 import { saveAs } from 'file-saver';
-import { connect } from 'react-redux'
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import * as dat from 'dat.gui'
+import { useParams, Link } from "react-router-dom"
 
 import './CoasterDetails.css'
 
-const mapStateToProps = state => ({
-    coaster_fr: state.products.coaster
-})
+const CoasterDetails = () => {
 
-const CoasterDetails = ({ coaster_fr }) => {
-
+    const { coaster_id } = useParams()
     const [coaster, setCoaster] = useState('/3dModels/Car.stl')
+
+ 
     const mountRef = useRef(null)
       
-    useEffect(()=>{
-        setCoaster(coaster_fr) 
-    },[coaster_fr])
+    const loadCosterDetails = async() => {
+        
+        // fetch(`http://localhost:5005/api/details/${coaster_id}`)
+        //     .then(response => response.json())
+        //     .then(coaster => setCoaster(coaster))
 
+        const getData = await fetch(`http://localhost:27017/api/details/${coaster_id}`)
+        const resp = await getData.json()
+        setCoaster(resp.modelUrl)
+    }
+
+    useEffect(()=>{
+        loadCosterDetails();
+           
+    },[])
+    console.log(coaster.modelUrl)
     useEffect(() => {
         
         let modelname = coaster;
@@ -232,7 +243,7 @@ const CoasterDetails = ({ coaster_fr }) => {
             const reader = new FileReader();
             console.log(file);
             
-            
+        
             reader.addEventListener( 'load', function ( event ) {
                 //console.log('Event - - '+event);
                 const contents = event.target.result;
@@ -379,4 +390,4 @@ const CoasterDetails = ({ coaster_fr }) => {
     )
 }
 
-export default connect(mapStateToProps, null)(CoasterDetails)
+export default CoasterDetails
