@@ -1,0 +1,98 @@
+.coaster-details img {
+    display: inline-block;
+    width: 50%;
+}
+
+.coaster-details article {
+    display: inline-block;
+    width: 450%;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.coaster-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.coaster-specification {
+    width: 30%;
+    margin-right: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coaster-detalle {
+    display: flex;
+    flex-direction: column;
+}
+.coasterTitle {
+    text-align: center;
+    width: 80%;
+    height: 30px;
+    background-color: #4f6780;
+    border-radius: 20px 20px 0 0;
+}
+
+.coaster-data {
+    width: 100%;
+    min-width: 320px;
+    height: 500px;
+    min-height: 500px;
+    background-color: #2A3B4C;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+}
+.coaster-detalle div {
+    background-color: #f3f3f3;
+    margin-top: 20px;
+    height: 35px;
+    border-radius: 20px;
+    
+}
+
+
+.coaster-detalle span {
+    display: block;
+    height: 100%;
+    background-color: yellow;
+    color: #000;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.coaster-img3d {
+    width: 70%;
+    height: 500px;
+}
+
+.btnContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btnCoaster {
+    background-color: rgb(255, 196, 0);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/***************************/
+.dg.main.a {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    width: 250px !important;
+}
+
+.close-button.close-bottom {
+    width: 250px !important;
+    
+}

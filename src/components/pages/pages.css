@@ -1,0 +1,7 @@
+.coaster-detail-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    padding: 30px 20px
+}

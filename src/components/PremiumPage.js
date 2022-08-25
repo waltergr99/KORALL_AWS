@@ -1,13 +1,12 @@
 import { Authenticator } from "@aws-amplify/ui-react";
 
 import '@aws-amplify/ui-react/styles.css'
+import Router from "./comons/Router";
 
 const PremiumPage = () => {
 
-    return <Authenticator>
-        {( {signOut}) => (<div>
-            <h1>Hola holaaa</h1>
-        </div>)}
+    return <Authenticator >
+        {( {signOut}) => (<Router/>)}
     </Authenticator>
 
 };
